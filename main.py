@@ -1,11 +1,4 @@
-def count(filename):
-    try:
-        with open(name, "r", encoding='utf-8') as file:
-            text = file.read()
-            words = text.split()
-            return len(words)
-    except FileNotFoundError:
-        return "Файл не найден."
-filename = 'text.txt'
-count = count(filename)
-print(f"Кол-во слов в файле'{filename}': {word_count}")
+with open('text.txt', 'r') as file: # Открытие файла text.txt для чтения
+    text = file.read() # Считывание текста из файла    
+words_count = len(text.split()) # Разделение текста на слова с помощью пробелов и подсчет их количества
+print(f"В файле text.txt {words_count} слов.") # Вывод результата
