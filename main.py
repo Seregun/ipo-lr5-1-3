@@ -1,4 +1,4 @@
-file = open("text.txt", "r") # Открытие файла text.txt (указать путь к файлу) для чтения
+file = open("text.txt", "r") # Открытие файла text.txt для чтения
 text = file.read() # Считывание текста из файла   
 print(text) 
 words_count = len(text.split()) # Разделение текста на слова с помощью пробелов и подсчет их количества
